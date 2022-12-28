@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gdsc logo</title>
+
+    <!-- css for  gdsc logo -->
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        @keyframes slideL {
+            0% {
+            transform: translateX(-50px);
+            opacity: 0;
+            }
+            50% {
+                opacity: 0.25;
+            }
+            100% {
+            transform: translateX(0);
+            opacity: 1;
+            }
+        }
+
+        .logo .left-arrow {
+            width: 150px;
+            height: 150px;
+            animation: slideL 2s ease-in-out;
+        }
+
+        .logo .left-arrow .upper-left-arrow {
+            width: 100px;
+            height: 30px;
+            background-color: red;
+            transform: rotate(-30deg);
+            transform-origin: top left;
+            border-radius: 50px;
+            position: absolute;
+        }
+        
+        .logo .left-arrow .lower-left-arrow {
+            width: 100px;
+            height: 30px;
+            background-color: rgb(12, 69, 238);
+            transform: rotate(30deg);
+            transform-origin: top left;
+            border-radius: 50px;
+            position: absolute;
+            top: -15px;
+            left: 15px;
+        }
+
+        @keyframes slideR {
+            0% {
+            transform: translateX(50px);
+            opacity: 0;
+            }
+            50% {
+                opacity: 0.25;
+            }
+            100% {
+            transform: translateX(0);
+            opacity: 1;
+            }
+        }
+
+        .logo .right-arrow {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            animation: slideR 2s ease-in-out;
+        }
+
+        .logo .right-arrow .upper-right-arrow {
+            width: 100px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-30deg);
+            transform-origin: top right;
+            border-radius: 50px;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+        }
+
+        .logo .right-arrow .lower-right-arrow {
+            width: 100px;
+            height: 30px;
+            background-color: green;
+            transform: rotate(30deg);
+            transform-origin: top right;
+            border-radius: 50px;
+            position: absolute;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="container">
+        <div class="logo">
+            <div class="left-arrow">
+                <div class="upper-left-arrow"></div>
+                <div class="lower-left-arrow"></div>
+            </div>
+            <div class="right-arrow">
+                <div class="upper-right-arrow"></div>
+                <div class="lower-right-arrow"></div>
+            </div>
+        </div>
+        <div class="title">
+            <div style="font-size: 25px; position: relative; top: -30px; left: -23px;">
+                <span style="color: red">G</span>
+                <span style="color:plum">D</span>
+                <span style="color:skyblue">S</span>
+                <span style="color:yellowgreen">C &emsp;</span>
+                <span style="color:red"> C</span>
+                <span style="color:plum">V</span>
+                <span style="color:skyblue">R</span>
+                <span style="color:yellowgreen">G</span>
+                <span style="color:blue">U</span></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
